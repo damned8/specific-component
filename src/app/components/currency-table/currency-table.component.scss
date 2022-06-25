@@ -1,0 +1,24 @@
+:host {
+  .table-wrapper {
+    overflow: auto;
+  }
+  .table {
+    width: 100%;
+  }
+  .table__head {
+  }
+  .table__head-row {
+  }
+  .table__head-row-item {
+    text-align: left;
+    padding: 8px;
+  }
+  .table__body {
+    overflow-x: scroll;
+  }
+  .table__body-row {
+  }
+  .table__body-row-item {
+    padding: 8px;
+  }
+}

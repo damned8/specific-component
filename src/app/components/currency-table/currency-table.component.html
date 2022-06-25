@@ -1,0 +1,27 @@
+<div class="table-wrapper">
+    <ng-container *ngIf="(table$ | async) as table">
+        <table class="table">
+            <thead class="table__head">
+                <tr class="table__head-row">
+                    <ng-container *ngFor="let header of table.headers">
+                        <th class="table__head-row-item">{{header}}</th>
+                    </ng-container>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <ng-container *ngFor="let items of table.items">
+                    <tr class="table__body-row">
+                        <td class="table__body-row-item">{{items.name}}</td>
+                        <td class="table__body-row-item">{{items.quantity}}</td>
+                        <td class="table__body-row-item">{{items.price}}</td>
+                        <td class="table__body-row-item">{{items.averageCost}}</td>
+                        <td class="table__body-row-item">{{items.marketValue}}</td>
+                        <td class="table__body-row-item">{{items.gainLoss}}</td>
+                        <td class="table__body-row-item">{{items.persentOfPortfolio}}</td>
+                        <td class="table__body-row-item">actons</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </ng-container>
+</div>
