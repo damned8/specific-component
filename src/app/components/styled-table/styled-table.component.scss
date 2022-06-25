@@ -1,0 +1,19 @@
+[app-styled-table] {
+  --table-padding: var(--override-table-padding, 8px);
+  width: 100%;
+  text-align: left;
+
+  thead {
+    tr {
+      th {
+      }
+    }
+  }
+  tbody {
+    text-align: left;
+    tr {
+      th {
+      }
+    }
+  }
+}
